@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server'; import {federated,train} from '@/lib/store'; export async function GET(){return NextResponse.json(federated)} export async function POST(){return NextResponse.json(train())}

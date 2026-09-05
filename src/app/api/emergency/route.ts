@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server'; import {activate,deactivate} from '@/lib/store'; export async function POST(req:Request){const {scenario,active}=await req.json();return NextResponse.json(active?activate(scenario):deactivate());}

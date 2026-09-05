@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {forecastFor} from '@/lib/operations';export const dynamic='force-dynamic';export async function GET(req:Request){const p=new URL(req.url).searchParams;return NextResponse.json(forecastFor(Number(p.get('phcId')||2),Number(p.get('horizon')||7)))}

@@ -1,0 +1,93 @@
+﻿# =============================================================
+# SwasthyaGrid — Next.js .gitignore
+# =============================================================
+
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ── Next.js build output ──────────────────────────────────────
+.next/
+out/
+build/
+dist/
+
+# ── TypeScript build info ─────────────────────────────────────
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Environment / secrets ─────────────────────────────────────
+# Never commit secrets, API keys, or credentials
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+.env.staging.local
+*.env
+secrets/
+.secrets/
+
+# ── Logs ──────────────────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+
+# ── Runtime / process ─────────────────────────────────────────
+.pid
+*.pid
+*.seed
+*.pid.lock
+
+# ── Cache / instrumentation ───────────────────────────────────
+.cache/
+.parcel-cache/
+.turbo/
+.swc/
+.vercel/
+.netlify/
+
+# ── Coverage / testing ────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+
+# ── OS-generated files ────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ── Editor / IDE files ────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ── Uploaded / generated assets ───────────────────────────────
+uploads/
+
+# ── Misc ──────────────────────────────────────────────────────
+*.tgz
+*.tar.gz
+*.zip
+.bob/
