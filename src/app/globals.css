@@ -1,12 +1,6 @@
 @import "tailwindcss";
 
 /* ═══════════════════════════════════════════════════════════════
-   Inter — geometric grotesque, loaded from Google Fonts CDN
-   (system-ui fallback ensures zero layout shift on first paint)
-   ═══════════════════════════════════════════════════════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-/* ═══════════════════════════════════════════════════════════════
    Design tokens — Light mode (default)
    ═══════════════════════════════════════════════════════════════ */
 :root {
@@ -111,7 +105,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: 'Inter', -apple-system, "Segoe UI", system-ui, ui-sans-serif, sans-serif;
+  font-family: var(--font-inter), -apple-system, "Segoe UI", system-ui, ui-sans-serif, sans-serif;
   font-size: 13.5px;
   line-height: 1.6;
   color: var(--text);
