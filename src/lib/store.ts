@@ -154,7 +154,7 @@ const southAfrica:Omit<Phc,'id'|'status'|'beds'|'occupied'|'staff'|'present'|'fo
 const allFacilities=[...india,...brazil,...russia,...china,...southAfrica];
 
 // Deterministic status/metric assignment
-const criticalIdx=[0,11,21,31,42];   // Lojhara, CHC Wuhan East, UBS Rocinha, Polyclinic Siberia, CHC Alexandra
+const criticalIdx=[11,21,31,42];   // CHC Wuhan East, UBS Rocinha, Polyclinic Siberia, CHC Alexandra
 const warningIdx =[1,2,12,22,27,32,38,41,45,49]; // spread across all countries
 
 export let phcs:Phc[]=allFacilities.map((f,i)=>{
